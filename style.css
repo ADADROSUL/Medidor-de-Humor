@@ -1,0 +1,109 @@
+/* style.css */
+
+/* Estilo geral do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #292929; /* Fundo escuro da página */
+    color: #fff; /* Texto branco por padrão */
+    display: flex;
+    flex-direction: column; /* Para alinhar os itens verticalmente */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 10px; /* Adiciona um pouco de padding lateral */
+}
+
+/* Estilo da imagem */
+img {
+    display: block; /* Remove espaços em branco ao redor da imagem */
+    width: 10%; /* Reduz a largura da imagem para 10% do tamanho original */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+/* Estilo do formulário */
+form {
+    background-color: #326dff; /* Fundo azul do formulário */
+    color: #fff; /* Texto branco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Ajusta a largura para 100% do contêiner pai */
+    max-width: 500px; /* Define uma largura máxima */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+}
+
+/* Estilo dos labels */
+form label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #292929; /* Títulos dos campos em cinza escuro */
+}
+
+/* Estilo dos inputs e selects */
+form input[type="text"],
+form select,
+form textarea {
+    width: 100%; /* Ajusta a largura dos campos para 100% */
+    padding: 10px;
+    border: none; /* Remove a borda */
+    border-radius: 4px;
+    box-sizing: border-box; /* Inclui o padding na largura total */
+    margin-top: 5px;
+    background-color: #292929; /* Fundo cinza escuro dos campos */
+    color: #fff; /* Texto branco nos campos */
+}
+
+/* Estilo do textarea */
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Estilo do botão de submit */
+form input[type="submit"] {
+    background-color: #292929; /* Fundo cinza escuro do botão */
+    color: #326dff; /* Texto azul */
+    border: 2px solid #326dff; /* Borda azul */
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Ajusta a largura do botão para 100% */
+    margin-top: 10px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1a1a1a; /* Fundo cinza escuro mais escuro no hover */
+    color: #2855d7; /* Texto azul mais escuro no hover */
+    border-color: #2855d7; /* Borda azul mais escura */
+}
+
+/* Estilo dos placeholders */
+form input::placeholder,
+form textarea::placeholder {
+    color: #aaa; /* Cor dos placeholders */
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 600px) {
+    form {
+        padding: 15px; /* Reduz o padding em telas menores */
+    }
+
+    form label {
+        font-size: 14px; /* Ajusta o tamanho da fonte dos labels */
+    }
+
+    form input[type="text"],
+    form select,
+    form textarea {
+        font-size: 14px; /* Ajusta o tamanho da fonte dos campos */
+    }
+
+    form input[type="submit"] {
+        font-size: 14px; /* Ajusta o tamanho da fonte do botão */
+    }
+}
